@@ -1,0 +1,14 @@
+.card{
+    /* border: 0px; */
+    /* box-shadow: 10px 5px 5px red; */
+    height: 350px;
+    width: 300px;
+
+    border-radius: 15px;
+}
+
+.image-breakfast{
+    width: 200px;
+    margin-top: 10px;
+    
+}

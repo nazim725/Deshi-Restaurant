@@ -1,0 +1,19 @@
+.footer-blog a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.footer-link a{
+    text-decoration: none;
+    color: goldenrod;
+    margin-right: 15px;
+
+}
+
+.footer-link p{
+    margin-right: 100px;
+}
+
+.link{
+    margin-left: 200px;
+}

@@ -1,0 +1,13 @@
+.banner img{
+    position: relative;
+}
+.search-field{
+    position: absolute;
+    top: 200px;
+    left: 330px;
+
+}
+
+.search-field .input{
+    width: 300px
+}
