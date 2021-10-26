@@ -13,10 +13,13 @@ const Header = () => {
 
     return (
         <>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
           <Container>
           <Navbar.Brand as={Link} to="/home#home">Deshi Restaurant</Navbar.Brand>
-          <Nav className="ms-auto">
+          <Navbar.Toggle className='nav-toggole' />
+              <Navbar.Collapse className="justify-content-end">
+              <Nav.Link as={Link} to="/signUp">Sign Up</Nav.Link>
+          <Nav.Link as={Link} to="/admin">Admin</Nav.Link>
            
             {
               user?.email?
@@ -25,18 +28,20 @@ const Header = () => {
               <Nav.Link as={Link} to="/Login">Login</Nav.Link>
             }
            
-            <Nav.Link as={Link} to="/signUp">Sign Up</Nav.Link>
-            <Nav.Link as={Link} to="/admin">Admin</Nav.Link>
 
-
-          
-          </Nav>
-              <Navbar.Toggle />
-              <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
                   Signed in as: <img className="sign-pic" src={user?.photoURL} alt="" />
                 </Navbar.Text>
               </Navbar.Collapse>
+         
+          <Nav className="ms-auto">
+          
+           
+
+
+          
+          </Nav>
+             
             
                 </Container>
               </Navbar>

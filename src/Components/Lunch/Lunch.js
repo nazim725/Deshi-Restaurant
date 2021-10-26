@@ -14,10 +14,10 @@ const Lunch = () => {
             })
     }, [])
     return (
-        <div>
+        <div className="lunch-divider">
             <div><h2 className="text-center mt-5">Lunch Items</h2></div>
 
-            <div className="mx-5 mt-5 pb-5 lunch-container">
+            <div className=" mt-5 pb-5 lunch-container">
 
 
                 {

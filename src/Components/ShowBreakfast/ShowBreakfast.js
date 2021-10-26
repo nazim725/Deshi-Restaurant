@@ -33,8 +33,9 @@ const ShowBreakfast = () => {
         }
     }
     return (
-        <div>
-            <div className="mx-5 mt-5 pb-5 dinner-container">
+        <div className='breakfast-divider'>
+            <h2>Breakfast Items</h2>
+            <div className="mt-5 pb-5 dinner-container">
 
 
                 {

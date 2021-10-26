@@ -16,7 +16,7 @@ const DinnerItem = (props) => {
             <Card.Text className="fw-bold">
                price: $ {price}
             </Card.Text>
-            <Link to={`/dinnerSingleItem/${_id}`}><button className="btn btn-warning">Order </button></Link>
+            <Link to={`/dinnerSingleItem/${_id}`}><button className="btn btn-warning order-button">Order </button></Link>
             </Card.Body>
         </Card>
         </Col>

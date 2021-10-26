@@ -12,10 +12,10 @@ const Breakfast = () => {
            })
     },[])
     return (
-       <div>
+       <div className="breakfast-divider">
 
            <h2 className="text-center mt-5">Breakfast Items</h2>
-            <div className="breakfast-container mx-5 mt-5 pb-5">
+            <div className="breakfast-container mt-5 pb-5">
             {
                 breakfast.map(breakfastItem=><BreakfastItem
                     key={breakfastItem.id}

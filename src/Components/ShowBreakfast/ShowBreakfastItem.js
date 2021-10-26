@@ -12,6 +12,9 @@ const ShowBreakfastItem = (props) => {
 
     return (
         <div>
+            
+             <div>
+            
             <Row xs={1} md={2} className="g-2">
 
                 <Col>
@@ -32,6 +35,8 @@ const ShowBreakfastItem = (props) => {
             </Row>
 
         </div>
+        </div>
+       
     );
 };
 

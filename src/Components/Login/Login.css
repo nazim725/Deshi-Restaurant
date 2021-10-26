@@ -1,3 +1,15 @@
-/* .login-button{
+.login-button{
     width: 200px;
-} */
+}
+.login-form .form{
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .login-form .form{
+        width: 80%;
+    }
+    .login-button{
+        width: 286px;
+    }
+}

@@ -2,3 +2,21 @@
     display: flex;
 }
 
+@media screen and (max-width:768px) {
+
+    .about{
+    display: block
+}
+
+.about div {
+    margin-top: 20px;
+}
+.about div h3 {
+    margin-top: 20px;
+}
+.about div p{
+    text-align: justify;
+    margin:  0 15px;
+}
+}
+

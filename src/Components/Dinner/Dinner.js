@@ -13,10 +13,10 @@ const Dinner = () => {
             })
     }, [])
     return (
-        <div>
+        <div className="dinner-divider">
             <div><h2 className="text-center mt-5">Dinner Items</h2></div>
 
-            <div className="mx-5 mt-5 pb-5 dinner-container">
+            <div className=" mt-5 pb-5 dinner-container">
 
 
                 {

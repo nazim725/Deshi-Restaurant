@@ -17,7 +17,7 @@ const BreakfastItem = (props) => {
                     <Card.Text className="fw-bold">
                        price: $ {price}
                     </Card.Text>
-                    <Link to={`/breakfastSingleItem/${_id}`}><button className="btn btn-warning">Order </button></Link>
+                    <Link to={`/breakfastSingleItem/${_id}`}><button className="btn btn-warning order-button">Order </button></Link>
                     </Card.Body>
                 </Card>
                 </Col>

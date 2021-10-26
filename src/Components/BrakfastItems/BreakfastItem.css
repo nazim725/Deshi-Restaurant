@@ -3,7 +3,6 @@
     /* box-shadow: 10px 5px 5px red; */
     height: 350px;
     width: 300px;
-
     border-radius: 15px;
 }
 
@@ -11,4 +10,8 @@
     width: 200px;
     margin-top: 10px;
     
+}
+
+.order-button{
+    width: 200px;
 }
