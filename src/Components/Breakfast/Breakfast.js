@@ -5,7 +5,7 @@ import './Breakfast.css'
 const Breakfast = () => {
     const [breakfast,setBreakfast]=useState([])
     useEffect(()=>{
-        fetch('./Breakfast.json')
+        fetch('http://localhost:5000/breakfast')
         .then(res=>res.json())
         .then(data=>{
             setBreakfast(data)

@@ -22,11 +22,11 @@ const Login = () => {
             </FloatingLabel>
 
            
-           <Button onClick={handleLogin}  variant="primary" type="submit" className="mt-3">Login</Button>
+           <Button onClick={handleLogin}  variant="primary" type="submit" className="mt-3 login-button w-50">Login</Button>
            <div>{error}</div>
 
 
-            <Button onClick={handleGoogleSignIn} variant="primary"  className="mt-3">
+            <Button onClick={handleGoogleSignIn} variant="primary"  className="mt-3 login-button w-50">
                 Google Sign In
             </Button>
             <p><small>New to Deshi? <Link className="text-decoration-none"  to='/signUp'>Create Account</Link></small></p>

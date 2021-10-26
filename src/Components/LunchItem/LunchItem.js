@@ -3,7 +3,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const LunchItem = (props) => {
-    const {name,price,img,id}=props.lunch;
+    const {name,price,img,_id}=props.lunch;
     return (
         <div>
             <Row xs={1} md={2} className="g-2">
@@ -17,7 +17,7 @@ const LunchItem = (props) => {
                price: $ {price}
             </Card.Text>
 
-            <Link to={`/lunchSingleItem/${id}`}><button className="btn btn-warning">Order </button></Link>
+            <Link to={`/lunchSingleItem/${_id}`}><button className="btn btn-warning">Order </button></Link>
 
             </Card.Body>
         </Card>

@@ -3,30 +3,31 @@ import DinnerItem from '../DinnerItem/DinnerItem';
 import './Dinner.css'
 
 const Dinner = () => {
-    const [dinner,setDinner]=useState([])
-    useEffect(()=>{
-        fetch('./Dinner.json')
-        .then(res=>res.json())
-        .then(data=>{
-            setDinner(data)
-            console.log(data)})
-    },[])
+    const [dinner, setDinner] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/dinner')
+            .then(res => res.json())
+            .then(data => {
+                setDinner(data)
+                console.log(data)
+            })
+    }, [])
     return (
         <div>
-             <div><h2 className="text-center mt-5">Dinner Items</h2></div>
-           
-           <div className="mx-5 mt-5 pb-5 dinner-container">
+            <div><h2 className="text-center mt-5">Dinner Items</h2></div>
 
-            
-            {
-                dinner.map(dinnerItem=><DinnerItem 
-                    key={dinnerItem.id}
-                    dinner={dinnerItem}></DinnerItem>)
-            }
+            <div className="mx-5 mt-5 pb-5 dinner-container">
 
 
-           </div>
-            
+                {
+                    dinner.map(dinnerItem => <DinnerItem
+                        key={dinnerItem.id}
+                        dinner={dinnerItem}></DinnerItem>)
+                }
+
+
+            </div>
+
         </div>
     );
 };

@@ -1,33 +1,54 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import './Banner.css'
-import banner from '../../Image/bannerbackground.png'
-import { FormControl, InputGroup,Button} from 'react-bootstrap';
+import banner from '../../Image/deshi.jpg'
+
 
 
 const Banner = () => {
     return (
         <div className="banner">
 
-            <img src={banner} alt=""  height="300" width="100%"/>
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 banner-pic"
+                        src={banner}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                    <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 banner-pic"
+                        src={banner}
+                        alt="Second slide"
+                    />
 
-            <div className="search-field">
-                <h2 className="text-center ms-5">Best Food Waiting for Your</h2>
-               {/* <div  className="mx-auto w-50">
-               <InputGroup className="mb-3 input ">
-                <FormControl
-                placeholder="Search"
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-                />
-                <Button variant="outline-secondary" id="button-addon2">
-                Search
-                </Button>
-            </InputGroup>
-               </div> */}
-            </div>
+                    <Carousel.Caption>
+                    <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 banner-pic"
+                        src={banner}
+                        alt="Third slide"
+                    />
 
-        
-            
+                    <Carousel.Caption>
+                    <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+
+
+
+
+
+
         </div>
     );
 };

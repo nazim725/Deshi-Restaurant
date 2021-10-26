@@ -2,8 +2,13 @@ import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const DinnerItem = (props) => {
-    const {name,img,price,_id}=props.dinner
+const ShowDinnerItem = (props) => {
+    const {name,img,price,_id}=props.dinnerItem
+    const {handleDeletDinner}=props;
+
+
+    
+
     return (
         <div>
             <Row xs={1} md={2} className="g-2">
@@ -15,8 +20,10 @@ const DinnerItem = (props) => {
             <Card.Title>{name}</Card.Title>
             <Card.Text className="fw-bold">
                price: $ {price}
+               
             </Card.Text>
-            <Link to={`/dinnerSingleItem/${_id}`}><button className="btn btn-warning">Order </button></Link>
+            <Link to={`/updateDinner/${_id}`}><button className="btn btn-warning me-4">Update </button></Link>
+            <button onClick={()=>handleDeletDinner(_id)} className="btn btn-warning">Delete</button>
             </Card.Body>
         </Card>
         </Col>
@@ -27,4 +34,4 @@ const DinnerItem = (props) => {
     );
 };
 
-export default DinnerItem;
+export default ShowDinnerItem;

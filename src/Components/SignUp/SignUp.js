@@ -20,13 +20,13 @@ const{handleRegistration,handlePasswordChange,handleEmailChange,error,handleGoog
                 <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" />
             </FloatingLabel>
 
-            <Button onClick={handleRegistration}  variant="primary" className="mt-3">
+            <Button onClick={handleRegistration}  variant="primary" className="mt-3 w-50">
                 Submit
             </Button>
             <br />
             <div>{error}</div>
 
-            <Button onClick={handleGoogleSignIn} variant="primary"  className="mt-3">
+            <Button onClick={handleGoogleSignIn} variant="primary"  className="mt-3 w-50">
                 Google Sign In
             </Button>
             <p><small>Already Have an Account? <Link className="text-decoration-none" to='/login'>Login</Link></small></p>

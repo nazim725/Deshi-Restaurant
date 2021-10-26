@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './BreakfastItem.css'
 
 const BreakfastItem = (props) => {
-    const {name,img,price,id}=props.breakfast;
+    const {name,img,price,_id}=props.breakfast;
     return (
         <div>
            <Row xs={1} md={2} className="g-2">
@@ -17,7 +17,7 @@ const BreakfastItem = (props) => {
                     <Card.Text className="fw-bold">
                        price: $ {price}
                     </Card.Text>
-                    <Link to={`/breakfastSingleItem/${id}`}><button className="btn btn-warning">Order </button></Link>
+                    <Link to={`/breakfastSingleItem/${_id}`}><button className="btn btn-warning">Order </button></Link>
                     </Card.Body>
                 </Card>
                 </Col>

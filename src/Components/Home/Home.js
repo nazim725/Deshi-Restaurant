@@ -10,15 +10,17 @@ import AuthProvider from '../../Context/AuthProvider';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Login from '../Login/Login';
 import LunchSingleItem from '../LunchSingleItem/LunchSingleItem';
-import DinnerSingleItem from '../DinnerSingleItem/DinnerSingleItem';
+import DinnerSingleItem from '../DinnerSingleItem/DinnerSingleItem'
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
         <div>
             <AuthProvider>
                 <Router>
+                    <Banner></Banner>
                     <Navbar></Navbar>
-                    {/* <Breakfast></Breakfast> */}
+                   
                     <Switch>
                         <Route path='/breakfast'>
                             <Breakfast></Breakfast>
@@ -46,6 +48,9 @@ const Home = () => {
                         <PrivateRoute path='/dinnerSingleItem/:dinnerId'>
                             <DinnerSingleItem></DinnerSingleItem>
                         </PrivateRoute>
+                       
+
+                       
 
                         <Route path='/login'>
                             <Login></Login>
