@@ -5,7 +5,7 @@ const UpdateBreakfast = () => {
     const {breakfastId}=useParams();
     const [breakfast,setBreakfast]=useState({});
 
-    const url = `http://localhost:5000/breakfast/${breakfastId}`
+    const url = `https://morning-reef-83761.herokuapp.com/breakfast/${breakfastId}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -16,7 +16,7 @@ const UpdateBreakfast = () => {
 
 
     const handleUpdateBreakfast = e => {
-        const url = `http://localhost:5000/breakfast/${breakfastId}`;
+        const url = `https://morning-reef-83761.herokuapp.com/breakfast/${breakfastId}`;
         console.log(url)
         fetch(url, {
             method: 'PUT',

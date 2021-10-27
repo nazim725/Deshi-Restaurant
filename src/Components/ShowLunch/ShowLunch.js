@@ -7,7 +7,7 @@ const ShowLunch = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/lunch')
+        fetch('https://morning-reef-83761.herokuapp.com/lunch')
             .then(res => res.json())
             .then(data => {
                 setLunch(data)
@@ -19,7 +19,7 @@ const ShowLunch = () => {
     const handleDeleteLunch = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/lunch/${id}`;
+            const url = `https://morning-reef-83761.herokuapp.com/lunch/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

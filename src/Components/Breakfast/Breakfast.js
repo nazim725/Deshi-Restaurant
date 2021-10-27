@@ -5,7 +5,7 @@ import './Breakfast.css'
 const Breakfast = () => {
     const [breakfast,setBreakfast]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/breakfast')
+        fetch('https://morning-reef-83761.herokuapp.com/breakfast')
         .then(res=>res.json())
         .then(data=>{
             setBreakfast(data)

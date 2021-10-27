@@ -13,7 +13,7 @@ const AddBreakfast = () => {
         const price = priceRef.current.value;
         const img = imgRef.current.value;
         const newBreakfast = { name, price, img }
-        fetch('http://localhost:5000/breakfast', {
+        fetch('https://morning-reef-83761.herokuapp.com/breakfast', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

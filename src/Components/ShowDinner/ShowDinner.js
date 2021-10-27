@@ -4,7 +4,7 @@ import ShowDinnerItem from './ShowDinnerItem';
 const ShowDinner = () => {
     const [dinner, setDinner] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/dinner')
+        fetch('https://morning-reef-83761.herokuapp.com/dinner')
             .then(res => res.json())
             .then(data => {
                 setDinner(data)
@@ -16,7 +16,7 @@ const ShowDinner = () => {
     const handleDeletDinner = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/dinner/${id}`;
+            const url = `https://morning-reef-83761.herokuapp.com/dinner/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

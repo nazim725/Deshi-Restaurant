@@ -6,7 +6,7 @@ const Lunch = () => {
 
     const [lunch, setLunch] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/lunch')
+        fetch('https://morning-reef-83761.herokuapp.com/lunch')
             .then(res => res.json())
             .then(data => {
                 setLunch(data)

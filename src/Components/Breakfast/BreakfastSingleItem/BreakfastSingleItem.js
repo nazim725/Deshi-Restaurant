@@ -8,7 +8,7 @@ const BreakfastSingleItem = () => {
 
     const [breakfast, setBreakfast] = useState({})
 
-    const url = `http://localhost:5000/breakfast/${breakfastId}`;
+    const url = `https://morning-reef-83761.herokuapp.com/breakfast/${breakfastId}`;
     console.log(url)
 
 

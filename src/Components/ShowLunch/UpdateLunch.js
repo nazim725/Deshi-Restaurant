@@ -7,7 +7,7 @@ const UpdateLunch = () => {
 
 
 
-    const url = `http://localhost:5000/lunch/${lunchId}`
+    const url = `https://morning-reef-83761.herokuapp.com/lunch/${lunchId}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -18,7 +18,7 @@ const UpdateLunch = () => {
 
 
     const handleUpdateLunch = e => {
-        const url = `http://localhost:5000/lunch/${lunchId}`;
+        const url = `https://morning-reef-83761.herokuapp.com/lunch/${lunchId}`;
         console.log(url)
         fetch(url, {
             method: 'PUT',

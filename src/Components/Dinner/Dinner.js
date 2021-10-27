@@ -5,7 +5,7 @@ import './Dinner.css'
 const Dinner = () => {
     const [dinner, setDinner] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/dinner')
+        fetch('https://morning-reef-83761.herokuapp.com/dinner')
             .then(res => res.json())
             .then(data => {
                 setDinner(data)

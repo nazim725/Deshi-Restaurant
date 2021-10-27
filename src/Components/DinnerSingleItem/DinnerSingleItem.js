@@ -5,7 +5,7 @@ import { useParams } from 'react-router';
 const DinnerSingleItem = () => {
     const [dinner, setDinner] = useState({})
     const { dinnerId } = useParams()
-    const url = `http://localhost:5000/dinner/${dinnerId}`
+    const url = `https://morning-reef-83761.herokuapp.com/dinner/${dinnerId}`
 
     useEffect(() => {
         fetch(url)
