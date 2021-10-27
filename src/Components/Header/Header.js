@@ -29,8 +29,8 @@ const Header = () => {
             }
            
 
-                <Navbar.Text>
-                  Signed in as: <img className="sign-pic" src={user?.photoURL} alt="" />
+                <Navbar.Text className="ms-3" >
+                  Signed in as: <img className="sign-pic " src={user?.photoURL} alt="" />
                 </Navbar.Text>
               </Navbar.Collapse>
          

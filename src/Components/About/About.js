@@ -10,29 +10,29 @@ const About = () => {
         <div>
 
             <div>
-                <h2>Why You Choose Us </h2>
+                <h2 className="text-primary fw-bold ">Why You Choose Us </h2>
                 <p>This restaurant is healthy and healthful place in local area.We Provide services to customer in due time.All western ffod item are exist all the time in this restaurant.</p>
             </div>
 
             <div className="about">
                 <div>
                     <img src={img1} alt="" width="300" />
-                    <h3>Fast Delivery</h3>
-                   <p> <small>The delivery sestem of our Deshi restaurant is exelency.Every customer get their ordered food in due time.Our special stups delivered the orderd food to the home to home delivery.</small></p>
+                    <h3 className="text-primary fw-bold">Fast Delivery</h3>
+                    <p className="text-success"> <small>The delivery sestem of our Deshi restaurant is exelency.Every customer get their ordered food in due time.Our special stups delivered the orderd food to the home to home delivery.</small></p>
                 </div>
 
                 <div>
                     <img src={img2} alt="" width="300" />
-                    <h3>A good Auto Responder</h3>
-                    <p> <small>The delivery sestem of our Deshi restaurant is exelency.Every customer get their ordered food in due time.Our special stups delivered the orderd food to the home to home delivery.</small></p>
+                    <h3 className="text-primary fw-bold">A good Auto Responder</h3>
+                    <p> <small className="text-success">The delivery sestem of our Deshi restaurant is exelency.Every customer get their ordered food in due time.Our special stups delivered the orderd food to the home to home delivery.</small></p>
                 </div>
                 <div>
-                    <img src={img3} alt="" width="300"/>
-                    <h3>Home Delivery</h3>
-                    <p> <small>The delivery sestem of our Deshi restaurant is exelency.Every customer get their ordered food in due time.Our special stups delivered the orderd food to the home to home delivery.</small></p>
+                    <img src={img3} alt="" width="300" />
+                    <h3 className="text-primary fw-bold">Home Delivery</h3>
+                    <p className="text-success"> <small>The delivery sestem of our Deshi restaurant is exelency.Every customer get their ordered food in due time.Our special stups delivered the orderd food to the home to home delivery.</small></p>
                 </div>
             </div>
-            
+
         </div>
     );
 };

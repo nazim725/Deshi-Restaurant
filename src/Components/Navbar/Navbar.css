@@ -1,0 +1,37 @@
+.nav-link-button {
+    background-color: green;
+    padding: 30px;
+  
+    margin-right: 30px;
+    border:5px solid rgb(111, 155, 45) ;
+    border-radius: 15px;
+
+    width: 220px;
+    color: khaki;
+    
+}
+
+.nav-link-button:hover{
+    background-color:rgb(12, 97, 196);
+    border:5px solid skyblue;
+    width: 240px;
+    transition: background-color 1s linear, width 1s linear
+}
+
+@media screen and (max-width:768px) {
+    .nav-link-button {
+        
+        padding: 10px;
+        margin-right: 10px;
+        width: 100px;
+        
+    }
+    .nav-link-button:hover{
+       
+        width: 120px;
+       
+    }
+    
+
+    
+}

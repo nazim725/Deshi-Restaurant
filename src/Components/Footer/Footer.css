@@ -2,12 +2,13 @@
     text-decoration: none;
     display: block;
     color: white;
+    
 }
 .footer-link a{
     text-decoration: none;
     color: goldenrod;
     margin-right: 15px;
-
+    
 }
 
 .footer-link p{
@@ -16,4 +17,23 @@
 
 .link{
     margin-left: 200px;
+}
+
+@media screen and (max-width:768px) {
+    .footer-link p{
+        margin-right: 30px;
+    }
+    
+    .link{
+        margin-left: 0px;
+    }
+    
+    .footer-blog a{
+        text-align: left;
+        
+    }
+    
+    
+    
+    
 }
