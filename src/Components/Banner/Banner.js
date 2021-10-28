@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css'
 import banner from '../../Image/deshi.jpg'
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -17,7 +18,10 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                        <Zoom left cascade>
+                            <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                        </Zoom>
+
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -28,7 +32,9 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                    <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                        <Zoom left cascade>
+                            <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                        </Zoom>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,7 +45,9 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                    <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                        <Zoom left cascade>
+                            <h2 className="caption">Deshi Lounge and Restaurant</h2>
+                        </Zoom>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
